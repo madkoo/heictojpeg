@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Publish
-      run: dotnet publish -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true 
+      run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true 
